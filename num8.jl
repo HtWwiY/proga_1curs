@@ -1,4 +1,4 @@
-function find_exit(r::Robot)
+function exit(r::Robot)
 
     n=0 
     side=Ost
@@ -12,6 +12,7 @@ function find_exit(r::Robot)
 end
 
 import HorizonSideRobots.move!
+
 move!(r,side,num_steps)=for _ in 1:num_steps move!(r,side) end
 
 inverse(side::HorizonSide)=HorizonSide(mod(Int(side)+2,4))

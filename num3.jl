@@ -1,4 +1,4 @@
-function square_painter!(r::Robot) #Главная функция
+function square!(r::Robot) 
 
     num_vert = moves!(r, Sud)
     num_hor = moves!(r, West)
